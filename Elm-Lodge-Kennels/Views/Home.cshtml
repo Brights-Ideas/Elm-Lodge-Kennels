@@ -37,7 +37,6 @@
                         {
                             string styleString = !slide.IsFirst() ? "display:none;" : "";
                             <li class="rotating-panel fc" style="@styleString">
-							@*<img class="img-responsive img-thumbnail fl" alt="@slide.Name" src="@slide.GetPropertyValue("mainImage")" />*@
 								<img class="img-responsive img-thumbnail fl" alt="@slide.Name" src="@slide.GetPropertyValue("mainImage")" />
                                 <div class="">
                                     @Html.Raw(slide.GetPropertyValue("bodyText"))
